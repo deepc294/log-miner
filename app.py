@@ -2,9 +2,9 @@ import os
 from flask import Flask, flash, render_template, request, url_for
 import pandas as pd
 from flask import send_from_directory
-app = Flask(__name__, static_folder="D:\Webanix\static")
-app.config['UPLOAD_FOLDER'] = "D:\\Webanix\\Uploads"
-app.config['EXPORT'] = "D:\\Webanix\\Export"
+app = Flask(__name__, static_folder=".\\static")
+app.config['UPLOAD_FOLDER'] = ".\\Uploads"
+app.config['EXPORT'] = ".\\Export"
 
 def csv_converter(file_name):
     Ip =[]
