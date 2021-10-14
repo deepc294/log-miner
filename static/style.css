@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+header{
+    background-color: dark grey;
+    margin-top: 0px;
+    height: 40px;
+    padding-top: 20px;
+    padding-left: 45%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 21px;
+    font-weight:bold;
+    text-decoration: none;
+    border: 5px;
+    color: rgb(165, 171, 161);
+    text-align: center;
+    display :inline;
+}
+body{
+    background-image: url('back.jpg');
+    background-size: cover;
+}
+
+.uploadform{
+    width: 320px;
+    height: 300px;
+    background: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 18px 19px;
+    opacity: 1;
+    color: rgb(165, 171, 161);
+    opacity: 0.8;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.uploadfile {
+    position: 100px, 40px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 227px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 25px;
+}
+.submit{
+    border-radius:5px;
+    height: 40px;
+    width: 150px;
+    font-size: 16px;
+}
+.download button:hover{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 260px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}

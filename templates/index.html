@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogMiner v1.0</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header id="header">
+        <a href="" style="text-decoration: none;">LogMiner v1.0</a></header>
+    <div class="uploadform">
+        <form method="POST" enctype="multipart/form-data">
+            <p>Upload the Log File Here</p>
+            <input type="file" class="form-control uploadfile" name="file" />
+            <input type="submit" class="submit"/>
+        </form>
+        <p>
+            Status: {{message}}
+        </p>
+        <p>Download the CSV here</p>
+        {% if result == "success" %}
+        <button type="button" class="download" onclick="location.href='{{file_name}}'">Download</button>
+        {% endif %}
+    </div>
+</body>
+
+</html>
+
+
